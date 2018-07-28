@@ -3,9 +3,9 @@
 @implementation SBPlanet
 
 -(instancetype)initWithName:(NSString *)name
-                           :(NSInteger)diameter
-                           :(float)dayLength
-                           :(float)millionKMsFromSun
+                   diameter:(NSInteger)diameter
+                  dayLength:(float)dayLength
+            distanceFromSun:(float)millionKMsFromSun
 {
     self = [super init];
     if (self) {
