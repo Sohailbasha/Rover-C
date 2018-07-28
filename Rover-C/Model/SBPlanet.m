@@ -13,13 +13,10 @@
         _diameter = diameter;
         _dayLength = dayLength;
         _millionKMsFromSun = millionKMsFromSun;
+        _imageName = [name lowercaseString];
     }
     return self;
 }
 
--(void)setName:(NSString *)name
-{
-    _imageName = [name lowercaseString];
-}
 
 @end

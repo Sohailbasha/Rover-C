@@ -1,8 +1,9 @@
 #import "SBPlanetController.h"
+#import "SBPlanet.h"
 
 @implementation SBPlanetController
 
--(NSArray*)planets
++(NSArray*)planets
 {
   
     SBPlanet *mercury = [[SBPlanet alloc] initWithName:@"Mercury" diameter:4879 dayLength:4222.6 distanceFromSun:57.9];
