@@ -1,17 +1,10 @@
 #import <Foundation/Foundation.h>
+#import "SBPlanet.h"
 
 @interface PlanetController : NSObject
 
--(instancetype)initWithName:(NSString *)name
-                           :(NSInteger)diameter
-                           :(float)dayLength
-                           :(float)millionKMsFromSun;
+-(NSArray<SBPlanet> *)planets;
 
 
-@property(readonly)NSString *name;
-@property(readonly)NSString *imageName;
-@property(readonly)NSInteger diameter;
-@property(readonly)float dayLength;
-@property(readonly)float millionKMsFromSun;
 
 @end

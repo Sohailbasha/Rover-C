@@ -2,12 +2,24 @@
 
 @implementation SBPlanet
 
--(instancetype)initWithName:(NSString *)name {
+-(instancetype)initWithName:(NSString *)name
+                           :(NSInteger)diameter
+                           :(float)dayLength
+                           :(float)millionKMsFromSun
+{
     self = [super init];
-    if(self) {
+    if (self) {
         _name = name;
+        _diameter = diameter;
+        _dayLength = dayLength;
+        _millionKMsFromSun = millionKMsFromSun;
     }
     return self;
+}
+
+-(void)setName:(NSString *)name
+{
+    _imageName = [name lowercaseString];
 }
 
 @end
