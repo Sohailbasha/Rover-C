@@ -14,6 +14,7 @@
 		FD70AD95210D058A0087E756 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD70AD94210D058A0087E756 /* main.m */; };
 		FD70ADA1210D08590087E756 /* SBPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = FD70ADA0210D08590087E756 /* SBPlanet.m */; };
 		FD70ADAB210D0B970087E756 /* PlanetListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD70ADAA210D0B970087E756 /* PlanetListTableViewController.m */; };
+		FD70ADAE210D0C350087E756 /* PlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD70ADAD210D0C350087E756 /* PlanetController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		FD70ADA0210D08590087E756 /* SBPlanet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBPlanet.m; sourceTree = "<group>"; };
 		FD70ADA9210D0B970087E756 /* PlanetListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetListTableViewController.h; sourceTree = "<group>"; };
 		FD70ADAA210D0B970087E756 /* PlanetListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetListTableViewController.m; sourceTree = "<group>"; };
+		FD70ADAC210D0C350087E756 /* PlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetController.h; sourceTree = "<group>"; };
+		FD70ADAD210D0C350087E756 /* PlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlanetController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +67,13 @@
 				FD70AD85210D05890087E756 /* AppDelegate.h */,
 				FD70AD86210D05890087E756 /* AppDelegate.m */,
 				FD70AD8B210D05890087E756 /* Main.storyboard */,
+				FD70AD94210D058A0087E756 /* main.m */,
+				FD70ADAF210D0C390087E756 /* Model Controller */,
 				FD70ADA5210D0AC20087E756 /* ViewController */,
 				FD70AD9E210D05E90087E756 /* Model */,
 				FD70AD8E210D058A0087E756 /* Assets.xcassets */,
 				FD70AD90210D058A0087E756 /* LaunchScreen.storyboard */,
 				FD70AD93210D058A0087E756 /* Info.plist */,
-				FD70AD94210D058A0087E756 /* main.m */,
 			);
 			path = "Rover-C";
 			sourceTree = "<group>";
@@ -90,6 +94,15 @@
 				FD70ADAA210D0B970087E756 /* PlanetListTableViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FD70ADAF210D0C390087E756 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD70ADAC210D0C350087E756 /* PlanetController.h */,
+				FD70ADAD210D0C350087E756 /* PlanetController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD70AD95210D058A0087E756 /* main.m in Sources */,
+				FD70ADAE210D0C350087E756 /* PlanetController.m in Sources */,
 				FD70ADAB210D0B970087E756 /* PlanetListTableViewController.m in Sources */,
 				FD70AD87210D05890087E756 /* AppDelegate.m in Sources */,
 				FD70ADA1210D08590087E756 /* SBPlanet.m in Sources */,
