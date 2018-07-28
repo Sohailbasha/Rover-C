@@ -1,10 +1,10 @@
-#import "PlanetListViewController.h"
+#import "SBPlanetListViewController.h"
 
-@interface PlanetListViewController ()
+@interface SBPlanetListViewController ()
 
 @end
 
-@implementation PlanetListViewController
+@implementation SBPlanetListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
