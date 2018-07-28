@@ -15,6 +15,7 @@
 		FD70ADA1210D08590087E756 /* SBPlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = FD70ADA0210D08590087E756 /* SBPlanet.m */; };
 		FD70ADAB210D0B970087E756 /* SBPlanetListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD70ADAA210D0B970087E756 /* SBPlanetListTableViewController.m */; };
 		FD70ADB2210D10780087E756 /* SBPlanetController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD70ADB1210D10780087E756 /* SBPlanetController.m */; };
+		FD70ADB5210D19790087E756 /* SBPlanetDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD70ADB4210D19790087E756 /* SBPlanetDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		FD70ADAA210D0B970087E756 /* SBPlanetListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBPlanetListTableViewController.m; sourceTree = "<group>"; };
 		FD70ADB0210D10780087E756 /* SBPlanetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBPlanetController.h; sourceTree = "<group>"; };
 		FD70ADB1210D10780087E756 /* SBPlanetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBPlanetController.m; sourceTree = "<group>"; };
+		FD70ADB3210D19790087E756 /* SBPlanetDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBPlanetDetailViewController.h; sourceTree = "<group>"; };
+		FD70ADB4210D19790087E756 /* SBPlanetDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBPlanetDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 			children = (
 				FD70ADA9210D0B970087E756 /* SBPlanetListTableViewController.h */,
 				FD70ADAA210D0B970087E756 /* SBPlanetListTableViewController.m */,
+				FD70ADB3210D19790087E756 /* SBPlanetDetailViewController.h */,
+				FD70ADB4210D19790087E756 /* SBPlanetDetailViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				FD70ADAB210D0B970087E756 /* SBPlanetListTableViewController.m in Sources */,
 				FD70AD87210D05890087E756 /* AppDelegate.m in Sources */,
 				FD70ADA1210D08590087E756 /* SBPlanet.m in Sources */,
+				FD70ADB5210D19790087E756 /* SBPlanetDetailViewController.m in Sources */,
 				FD70ADB2210D10780087E756 /* SBPlanetController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

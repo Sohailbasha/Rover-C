@@ -1,5 +1,6 @@
 #import "SBPlanetListTableViewController.h"
 #import "SBPlanetController.h"
+#import "SBPlanetDetailViewController.h"
 #import "SBPlanet.h"
 
 @interface SBPlanetListTableViewController ()
@@ -41,14 +42,21 @@
 }
 
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if([segue.identifier  isEqual: @"toPlanetDetail"]) {
+        SBPlanetDetailViewController *detailVC = segue.destinationViewController;
+        if(detailVC) {
+            NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+            if(indexPath) {
+                SBPlanet *planet = [[SBPlanetController planets] objectAtIndex:indexPath.row];
+                detailVC.planet = planet;
+            }
+        }
+    }
 }
-*/
+
 
 @end
