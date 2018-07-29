@@ -4,14 +4,14 @@
 
 -(instancetype)initWithName:(NSString *)name
                    diameter:(NSInteger)diameter
-                  dayLength:(float)dayLength
+                  dayLength:(NSInteger)dayLength
             distanceFromSun:(float)millionKMsFromSun;
 
 
-@property(readonly)NSString *name;
-@property(readonly)NSString *imageName;
-@property(readonly)NSInteger diameter;
-@property(readonly)float dayLength;
-@property(readonly)float millionKMsFromSun;
+@property(nonatomic, copy, readonly)NSString *name;
+@property(nonatomic, copy, readonly)NSString *imageName;
+@property(nonatomic, readonly)NSInteger diameter;
+@property(nonatomic, readonly)float dayLength;
+@property(nonatomic, readonly)float millionKMsFromSun;
 
 @end

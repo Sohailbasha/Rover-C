@@ -4,7 +4,7 @@
 
 -(instancetype)initWithName:(NSString *)name
                    diameter:(NSInteger)diameter
-                  dayLength:(float)dayLength
+                  dayLength:(NSInteger)dayLength
             distanceFromSun:(float)millionKMsFromSun
 {
     self = [super init];
