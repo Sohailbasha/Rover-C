@@ -36,6 +36,7 @@
     
     SBPlanet *planet = [[SBPlanetController planets] objectAtIndex:indexPath.row];
     cell.textLabel.text = planet.name;
+    cell.imageView.contentMode = UIViewContentModeScaleAspectFill;
     cell.imageView.image = [UIImage imageNamed:planet.imageName];
     
     return cell;
@@ -46,6 +47,15 @@
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"PlanetDetailSegue"]) {
+        SBPlanetDetailViewController *detailViewController = segue.destinationViewController;
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        SBPlanet *planet = [SBPlanetController planets][indexPath.row];
+        detailViewController.planet = planet;
+    }
+    
+    /*
+                            +isEqualToString:@""
     if([segue.identifier  isEqual: @"toPlanetDetail"]) {
         SBPlanetDetailViewController *detailVC = segue.destinationViewController;
         if(detailVC) {
@@ -56,6 +66,7 @@
             }
         }
     }
+     */
 }
 
 
